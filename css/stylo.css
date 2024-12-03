@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+#titulo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0769AD;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    -webkit-text-stroke: 1px black;
+    margin-bottom: 20px;
+}
+
+#quiz {
+    margin: 5% auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+#quiz:hover {
+    transform: scale(1.02);
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+button {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin: 10px auto;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+.resposta {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+.resposta:hover {
+    background-color: #ffeb3b;
+    color: #000;
+}
+
+.resposta.selecionada {
+    background-color: #c5cae9;
+    color: #000;
+}
+
+#confirmar {
+    background: #11b411;
+    color: white;
+    border-radius: 10px;
+}
+
+#confirmar:hover {
+    background-color: #0e9e0e;
+}
+
+.errada {
+    background-color: #f44336;
+    color: white;
+}
+
+.correta {
+    background-color: #4caf50;
+    color: white;
+    animation: piscaCerto 0.5s infinite;
+}
+
+@keyframes piscaCerto {
+
+    0%,
+    49% {
+        background-color: #4caf50;
+    }
+
+    50%,
+    100% {
+        background-color: #388e3c;
+    }
+}
+
+#status {
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    margin: 5% auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+#status:hover {
+    transform: scale(1.02);
+}
+
+#novoJogo {
+    background-color: #000;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#novoJogo:hover {
+    background-color: #333;
+}
+
+.oculto {
+    display: none;
+}
